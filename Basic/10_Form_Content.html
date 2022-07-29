@@ -16,7 +16,7 @@
 <h1>How to create a Forms</h1>
 <hr>
 <!--action--><!--actual location which we wanted to send the form data-->
-<form action="gedara" >
+<form action="gedara" method="post">
     <fieldset>
         <legend>Customer Form</legend>
 
@@ -26,22 +26,24 @@
         <br>
 
         <label for="txtCusName">Customer Name</label>
-        <input type="text" id="txtCusName">
+        <input type="text" id="txtCusName" name="customername">
         <br>
         <br>
 
         <label for="txtCusAddress">Customer Address</label>
-        <input type="text" id="txtCusAddress">
+        <input type="text" id="txtCusAddress" name="customeraddress">
         <br>
         <br>
 
         <label for="txtCusSalary">Customer Salary</label>
-        <input type="number" id="txtCusSalary">
+        <input type="number" id="txtCusSalary" name="customersalary">
         <br>
         <br>
 
+        <input type="checkbox"  name="option" value="IJSE">
+
+        <!--button types-->
         <input type="reset">
-
         <button>Save Customer</button>
     </fieldset>
 </form>
